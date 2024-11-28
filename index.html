@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Box</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.8.0/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <link rel="shortcut icon" href="icons8-folder-32.png" type="image/x-icon">
+
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: rgb(174, 255, 0); text-shadow: 1px 1px 2px rgb(255, 255, 255);">ProjectBox</h1>
+        <p>Upload and Manage Your Projects</p>
+
+        <input type="text" id="searchBar" placeholder="Search projects...">
+
+        <form id="uploadForm">
+            <input type="text" id="projectName" placeholder="Enter project name" required>
+            <input type="file" id="fileInput" required>
+            <select id="categorySelect">
+                <option value="Images">Images</option>
+                <option value="Videos">Videos</option>
+                <option value="Documents">Documents</option>
+            </select>
+            <button type="submit">Upload Project</button>
+        </form>
+
+        <button id="modeToggleBtn">Switch to Light Mode</button>
+
+        <div id="foldersContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

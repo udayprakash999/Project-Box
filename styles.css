@@ -1,0 +1,250 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #111, #333);
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    height: auto; 
+    min-height: 100vh; 
+    overflow-y: auto; 
+    transition: background 0.5s ease;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease;
+    overflow-y: auto;
+    max-height: calc(100vh - 60px); 
+}
+
+p {
+    text-align: center;
+    margin-bottom: 27px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input, select, button {
+    padding: 12px;
+    font-size: 16px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background-color: #222;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+button {
+    background-color: #4caf50;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+#saveBtn {
+    background-color: #2196f3;
+    margin-bottom: 30px;
+}
+
+#saveBtn:hover {
+    background-color: #0b7dda;
+}
+
+#foldersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.folder {
+    background-color: #333;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.folder h3 {
+    text-align: center;
+    color: #ffeb3b;
+    margin-bottom: 20px;
+}
+
+.project-item {
+    background-color: #444;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-item button {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    background-color: #555;
+}
+
+.project-item button:hover {
+    background-color: #d32f2f;
+    transform: translateY(-3px);
+}
+
+.delete-folder-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.delete-folder-btn:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+.mode-toggle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mode-toggle button {
+    padding: 10px 15px;
+    background-color: #ffeb3b;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.mode-toggle button:hover {
+    background-color: #fbc02d;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+.folder {
+    border: 1px solid #555;
+    margin: 10px;
+    padding: 10px;
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.project-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.project-item button {
+    margin-left: auto;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.project-item button:hover {
+    background-color: darkred;
+}
+
+#modeToggleBtn {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #444;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
